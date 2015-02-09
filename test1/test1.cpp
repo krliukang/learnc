@@ -4,18 +4,27 @@
 #include "stdafx.h"
 #include "stdio.h"
 
+typedef struct
+{
+	int a;
+	int b;
+}sdsd;
+
+typedef struct
+{
+	int d[2];
+}sdsd1;
 
 int main(void)
 {
-	unsigned int a = 0 , d = 0;
-	unsigned int b = 4294957762;
-	unsigned int c = 3466;
+	int i,uu;
+	sdsd c[2],*m;
+	sdsd1 w,w1;
 
-	a = c - b;
-	if (b <= 0)
-		d = 5;
-	if (b >0)
-		d = 10;
-	return 0;
+	w.d[0] = 1;
+	w.d[1] = 0;
+
+	memcpy(&w1,&w,sizeof(w));
+	printf("%d",w1.d[0]);
 }
 
